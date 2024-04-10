@@ -1,8 +1,6 @@
 function pagina() {
   const sectionPosts = document.getElementsByClassName("main_posts");
   var quantPosts = Math.random() * 10;
-  const postUser = document.getElementsByClassName("post_user");
-  const postImg = document.getElementsByClassName("post_img");
   for (var i = 0; i < quantPosts; i++) {
     const uniqueParam = `?random=${Math.random() * 1}`;
     const userImg = `<img
@@ -14,7 +12,7 @@ function pagina() {
       <p class="user_description">descricao</p>
     </div>`;
     const postImg = `
-    <img src="https://source.unsplash.com/375x298/?airplane${uniqueParam}" alt="" class="imagem"/>
+    <img src="https://source.unsplash.com/375x298/?ramdom${uniqueParam}" alt="" class="imagem"/>
     `;
     const newPost = document.createElement("div");
     newPost.classList.add("post");

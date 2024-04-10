@@ -21,7 +21,7 @@ body {
 }
 .instagram main {
   margin-top: 45px;
-  margin-bottom:90px;
+  margin-bottom: 90px;
 }
 .main_top {
   display: flex;
@@ -79,7 +79,7 @@ body {
   padding: 2px;
   cursor: pointer;
 }
-.stories_img{
+.stories_img {
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to bottom, #df20b5, #fed237) border-box;
   border-radius: 50%;
@@ -112,40 +112,36 @@ body {
   font-weight: 400;
   font-size: 11px;
 }
-.post_user div{
-    margin-left: 5px;
+.post_user div {
+  margin-left: 5px;
 }
-.post{
-    margin-top: 30px;
+.post {
+  margin-top: 30px;
 }
-.post:first-child{
-    margin-top: 0px;
+.post:first-child {
+  margin-top: 0px;
 }
-.post_buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.post_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 15px;
-
 }
-.post_img{
-    margin-top: 5px;
+.post_img {
+  margin-top: 5px;
 }
-.post_description{
+.post_description {
   padding: 0 15px;
-
 }
-.post_likes{
-    font-weight: 800;
-    font-size: 15px;
+.post_likes {
+  font-weight: 800;
+  font-size: 15px;
 }
-.post_caption{
-    font-weight: 400;
-    font-size: 15px;
+.post_caption {
+  font-weight: 400;
+  font-size: 15px;
 }
-
-@media(min-width:425px){
-  .instagram {
-    width: 425px;
-  }
+.perfil_img {
+  width: 75px;
+  height: 75px;
 }
