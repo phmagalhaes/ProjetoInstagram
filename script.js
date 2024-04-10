@@ -1,3 +1,4 @@
+const storiePage = document.getElementsByClassName("storie_page");
 function pagina() {
   const sectionPosts = document.getElementsByClassName("main_posts");
   var quantPosts = Math.random() * 10;
@@ -36,7 +37,7 @@ function pagina() {
       </div>
     </div>
     <div class="post_description">
-      <p class="post_likes">0 curtidas</p>
+      <p class="post_likes">00 curtidas</p>
       <p class="post_caption">Nome do usuário: Meu primeiro post</p>
     </div>
   </div>
@@ -56,6 +57,7 @@ function pagina() {
   alt=""
   class="stories_img imagem"/>`;
     const newStorie = document.createElement("div");
+    newStorie.classList.add("storie");
     newStorie.innerHTML = `
     <div>
       ${storiesImg}
@@ -63,8 +65,16 @@ function pagina() {
     </div>
     `;
     sectionStories[0].appendChild(newStorie);
+    newStorie.addEventListener("click", function () {
+      storiePage[0].style.display = "block";
+      document.addEventListener("scroll", function(){document.body.style.overflow="hidden";});
+      setTimeout(() => {
+        storiePage[0].style.display = "none";
+        document.addEventListener("scroll", function(){document.body.style.overflow="initial";});
+      }, 5000);
+    });
   }
 }
-window.addEventListener("load", function() {
-  pagina()
+window.addEventListener("load", function () {
+  pagina();
 });

@@ -9,7 +9,7 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(49, 49, 49);
 }
 .instagram {
   width: 375px;
@@ -144,4 +144,69 @@ body {
 .perfil_img {
   width: 75px;
   height: 75px;
+}
+.storie_page {
+  width: 375px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  background-image: url("https://source.unsplash.com/375x700/?");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 100;
+  display: none;
+  transition: all 400ms ease;
+}
+.storie_bot{
+  position: fixed;
+  bottom: -4px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  padding: 30px 20px;
+  z-index: 1;
+}
+.storie_bot input{
+  background: none;
+  border: 1px solid white;
+  width: 240px;
+  height: 35px;
+  border-radius: 32px;
+  color: white;
+  padding: 0 20px;
+}
+.storie_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.storie_top_user{
+  display: flex;
+  align-items: center;
+}
+.storie_top_user img{
+  width: 54px;
+  height: 54px;
+}
+.storie_top_user div p{
+  color: white
+}
+.storie_top_user div p:first-child{
+  font-weight: 800;
+  font-size: 14px;
+}
+.storie_top_user div p:last-child{
+  font-weight: 400;
+  font-size: 11px;
+}
+.storie_quant{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.storie_top_close:hover{
+  cursor: pointer;
 }
