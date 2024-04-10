@@ -14,7 +14,7 @@ body {
 .instagram {
   width: 375px;
   min-height: 100vh;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .instagram header {
   position: fixed;
@@ -49,12 +49,12 @@ body {
 }
 .instagram footer {
   position: fixed;
-  bottom: 0;
+  bottom: -4px;
 }
 .footer_navbar {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0 20px;
 }
@@ -69,7 +69,21 @@ body {
     linear-gradient(to bottom, #df20b5, #fed237) border-box;
   border-radius: 50%;
   border: 3px solid transparent;
-  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #10a87d;
+  padding: 2px;
+  cursor: pointer;
+}
+.stories_img{
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #df20b5, #fed237) border-box;
+  border-radius: 50%;
+  border: 3px solid transparent;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -128,4 +142,10 @@ body {
 .post_caption{
     font-weight: 400;
     font-size: 15px;
+}
+
+@media(min-width:425px){
+  .instagram {
+    width: 425px;
+  }
 }
